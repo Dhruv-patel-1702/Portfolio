@@ -11,19 +11,19 @@ const Navbar = () => {
     <>
       <nav>
         <div
-          className="flex justify-between items-center text-xl px-14 fixed left-0 right-0 top-0 z-10 h-14 text-white -tracking-tight "
+          className="flex justify-between items-center text-xl px-28 fixed top-0 left-0 right-0 z-10 h-14 text-white -tracking-tight "
           style={{
             background: "#1e1e1e",
             fontFamily: "Inconsolata, monospace",
             fontOpticalSizing: "auto",
             fontWeight: "<weight>",
             fontStyle: "normal",
-            fontVariationSettings: "wdth 100",
+            fontVariationSettings: "width 100",
           }}
         >
-          <div>
+          <div className="text-2xl">
             <label
-              style={{ color: "#2938bd" }}
+              style={{ color: "#7e74f1" }}
               className="font-bold text-white"
             >
               Dhruv{" "}
@@ -33,37 +33,41 @@ const Navbar = () => {
           <div className="flex">
             <ul className="gap-x-10 font-semibold hidden lg:flex ">
               <li>
-                <Link to="/" className="nav-link">
+                <Link to="/" className="nav-link hover:text-gray-500">
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="nav-link">
+                <Link to="/about" className="nav-link hover:text-gray-500">
                   About
                 </Link>
               </li>
               <li>
-                <Link to="/service" className="nav-link">
+                <Link to="/service" className="nav-link hover:text-gray-500">
                   Service
                 </Link>
               </li>
               <li>
-                <Link to="/project" className="nav-link">
+                <Link to="/project" className="nav-link hover:text-gray-500">
                   Project
                 </Link>
               </li>
               <li>
-                <Link to="/skill" className="nav-link">
+                <Link to="/skill" className="nav-link hover:text-gray-500">
                   Skills
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="nav-link">
+                <Link to="/contact" className="nav-link hover:text-gray-500">
                   Contact
                 </Link>
               </li>
             </ul>
-            <button onClick={handleClick} className="lg:hidden">
+            <button
+              onClick={handleClick}
+              className="lg:hidden transition-opacity duration-500"
+              style={{ opacity: showMenu ? 0.5 : 2 }}
+            >
               {showMenu ? (
                 <img src="./assets/close.png" alt="close" className="w-4 h-4" />
               ) : (
@@ -78,33 +82,33 @@ const Navbar = () => {
           }`}
           style={{ background: "#1e1e1e" }}
         >
-          <li>
-            <Link to="/" className="nav-link">
+          <li onClick={handleClick}>
+            <Link to="/" className="nav-link hover:text-gray-500">
               Home
             </Link>
           </li>
-          <li>
-            <Link to="/about" className="nav-link">
+          <li onClick={handleClick}>
+            <Link to="/about" className="nav-link hover:text-gray-500">
               About
             </Link>
           </li>
-          <li>
-            <Link to="/service" className="nav-link">
+          <li onClick={handleClick}>
+            <Link to="/service" className="nav-link hover:text-gray-500">
               Service
             </Link>
           </li>
-          <li>
-            <Link to="/project" className="nav-link">
+          <li onClick={handleClick}>
+            <Link to="/project" className="nav-link hover:text-gray-500">
               Project
             </Link>
           </li>
-          <li>
-            <Link to="/skill" className="nav-link">
+          <li onClick={handleClick}>
+            <Link to="/skill" className="nav-link hover:text-gray-500">
               Skills
             </Link>
           </li>
-          <li>
-            <Link to="/contact" className="nav-link">
+          <li onClick={handleClick}>
+            <Link to="/contact" className="nav-link hover:text-gray-500">
               Contact
             </Link>
           </li>
