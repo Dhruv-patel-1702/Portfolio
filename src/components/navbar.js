@@ -11,7 +11,7 @@ const Navbar = () => {
     <>
       <nav>
         <div
-          className="flex justify-between items-center text-xl px-28 fixed top-0 left-0 right-0 z-10 h-14 text-white -tracking-tight "
+          className="flex justify-between items-center text-xl px-28 fixed top-0 left-0 right-0 z-20 h-14 text-white -tracking-tight "
           style={{
             background: "#1e1e1e",
             fontFamily: "Inconsolata, monospace",
@@ -69,7 +69,11 @@ const Navbar = () => {
               style={{ opacity: showMenu ? 0.5 : 2 }}
             >
               {showMenu ? (
-                <img src="./assets/close.png" alt="close" className="w-4 h-4" />
+                <img
+                  src="./assets/close.png"
+                  alt="close"
+                  className="w-4 h-4 "
+                />
               ) : (
                 <img src="./assets/menu.png" alt="menu" className="w-4 h-4" />
               )}
@@ -77,7 +81,7 @@ const Navbar = () => {
           </div>
         </div>
         <ul
-          className={`flex flex-col justify-center items-center gap-y-14 fixed bg-blue-400 w-full h-full top-0 font-semibold text-white transition-transform duration-700 ${
+          className={`flex flex-col justify-center items-center gap-y-14 fixed bg-blue-400 w-full h-full top-0 font-semibold text-white z-10 transition-transform duration-700 ${
             !showMenu ? "-translate-x-full" : "translate-x-0"
           }`}
           style={{ background: "#1e1e1e" }}
