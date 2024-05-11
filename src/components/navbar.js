@@ -21,7 +21,7 @@ const Navbar = () => {
             fontVariationSettings: "width 100",
           }}
         >
-          <div className="text-2xl">
+          <div className="sm:text-2xl relative right-20 lg:left-1 ">
             <label
               style={{ color: "#7e74f1" }}
               className="font-bold text-white"
@@ -65,7 +65,7 @@ const Navbar = () => {
             </ul>
             <button
               onClick={handleClick}
-              className="lg:hidden transition-opacity duration-500"
+              className="lg:hidden transition-opacity duration-500 relative left-20"
               style={{ opacity: showMenu ? 0.5 : 2 }}
             >
               {showMenu ? (
@@ -80,6 +80,7 @@ const Navbar = () => {
             </button>
           </div>
         </div>
+
         <ul
           className={`flex flex-col justify-center items-center gap-y-14 fixed bg-blue-400 w-full h-full top-0 font-semibold text-white z-10 transition-transform duration-700 ${
             !showMenu ? "-translate-x-full" : "translate-x-0"

@@ -12,11 +12,11 @@ const Home = () => {
           fontOpticalSizing: "auto",
           fontWeight: "<weight>",
           fontStyle: "normal",
-          fontVariationSettings: "wdth 100",
+          fontVariationSettings: "width 100",
         }}
       >
         <div
-          className="flex items-center justify-center gap-x-60"
+          className="flex items-center justify-center gap-x-52"
           style={{ background: "#1e1e1e", height: "100vh" }}
         >
           <div className="text-white">
@@ -73,15 +73,13 @@ const Home = () => {
             </div>
           </div>
           <div>
-            <div
-              className="box2 h-72 w-64 rounded-2xl  -rotate-12"
-              style={{ background: "#7e74f1" }}
-            >
-              <div
-                className="box2 h-72 w-64 rounded-2xl rotate-12"
-                style={{ background: "#69b2f6", opacity: 0.7 }}
-              >
-                <img src="./assets/Avatar.svg" alt="homeimage" />
+            <div>
+              <div className="w-60 h-80  border-2 rounded-lg border-gray-400 bg-zinc-700 opacity-40 bg-cover flex items-center">
+                <img
+                  src="./assets/sem3_end.jpg"
+                  alt="homephoto"
+                  className="w-60 h-72 relative right-5 rounded-lg shadow-xl"
+                />
               </div>
             </div>
           </div>
