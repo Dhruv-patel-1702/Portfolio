@@ -20,20 +20,20 @@ const about = () => {
         >
           <div>
             <img
-              className=" w-80 h-80"
+              className="w-80 h-80"
               src="./assets/AvatarAndIcons-removebg-preview.png"
               alt="About img"
             />
             <h1
-              className="text-4xl relative left-14 top-2 "
-              style={{ color: "#7e74f1" }}
+              className="text-3xl relative left-14 top-2"
+              style={{ color: "#7e74f1"}}
             >
               Dhruv <label className='text-white'>Patel</label>
             </h1>
           </div>
 
           <div className="w-2/5 relative top-5">
-            <h1 className="text-4xl mb-6" style={{ color: "#7e74f1" }}>
+            <h1 className="text-3xl mb-6" style={{ color: "#7e74f1" }}>
               ~ About me
             </h1>
             <p className="text-white text-xl leading-8">

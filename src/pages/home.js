@@ -19,7 +19,7 @@ const Home = () => {
           className="flex items-center justify-center gap-x-52"
           style={{ background: "#1e1e1e", height: "100vh" }}
         >
-          <div className="text-white">
+          <div className="text-white w-2/6">
             <p
               style={{
                 color: "#777e82",
@@ -32,14 +32,18 @@ const Home = () => {
             <p className="text-5xl font-bold mt-2">
               <label style={{ color: "#7e74f1" }}>Dhruv</label> Patel.
             </p>
-            <p className="mt-5 text-xl -tracking-tight space-y-2 ">
-              I'm a proficient frontend developer with expertise in crafting
-              <br />
-              dynamic websites using HTML, CSS, and JavaScript. Committed to
-              <br />
-              clean code and collaboration, I'm driven by challenges and
-              <br />
-              <p> dedicated to delivering top-notch results.</p>
+            <h1
+              className="relative mt-2 text-3xl font-bold"
+              style={{ color: "#7e74f1" }}
+            >
+              I'm a{" "}
+              <label className="text-white">fullstack web developer</label>
+            </h1>
+            <p className="mt-4 text-xl -tracking-tight  ">
+              I'm a proficient Fullstack developer with a strong focus on
+              crafting dynamic websites using React.js. Committed to clean code
+              and collaboration, I'm driven by challenges and dedicated to
+              delivering top-notch results.
             </p>
             <div className="flex gap-x-5 mt-5">
               <Link to="https://www.linkedin.com/in/dhruv-patel-43989822b/">
